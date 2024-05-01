@@ -2,16 +2,14 @@ package pages;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import utility.browserDriver;
 
 public class homePage extends browserDriver {
 
-
-
     public  static  String hambergerMenu_Xpath = "//*[@id=\"menuToggle\"]/input";
     public  static  String signinLink_LinkText = "Sign In Portal";
+    public  static  String onlineProductsPage_LinkText = "Online Products";
 
     public static void click_humbergerMenu() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
@@ -25,5 +23,10 @@ public class homePage extends browserDriver {
     public static void click_signinLink() throws InterruptedException {
         Thread.sleep(2000);
         driver.findElement(By.linkText(signinLink_LinkText)).click();
+    }
+
+    public static void click_OnlineProductsPage() throws InterruptedException {
+        Thread.sleep(2000);
+        driver.findElement(By.linkText(onlineProductsPage_LinkText)).click();
     }
 }

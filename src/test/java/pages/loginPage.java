@@ -1,25 +1,20 @@
 package pages;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import utility.browserDriver;
 
 public class loginPage extends browserDriver {
-
-
 
     public static String username_TextId = "usr";
     public static String password_TextId = "pwd";
     public static String loginBtn_Xpath = "//*[@id=\"second_form\"]/input";
     public static String newRegisterBtn_Id = "NewRegistration";
 
-    public static void sendkeys_username() throws InterruptedException {
+    public static void sendkeys_username() {
         driver.findElement(By.id(username_TextId)).sendKeys("Scott.gale@gmail.com");
     }
 
-    public static void sendkeys_password() throws InterruptedException {
+    public static void sendkeys_password() {
         driver.findElement(By.id(password_TextId)).sendKeys("P@sword!");
     }
 
