@@ -14,3 +14,9 @@
 ### Test Report:
 
 ![img.png](src/test/Report/Report.png)
+
+<br>
+
+### Test Cases:
+
+![img.png](src/test/Report/testCases.png)
